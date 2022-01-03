@@ -1,9 +1,9 @@
 package com.example.day34practicemvvmproject.Model
 
-class User (
+class Users (
     var id: String,
     var email: String,
     var password: String,
     var username: String,
-    var photo: String
+    var image: String
         )

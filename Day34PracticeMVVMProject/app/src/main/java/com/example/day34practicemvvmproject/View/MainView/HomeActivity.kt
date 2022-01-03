@@ -23,9 +23,12 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
 
-        setRecyclerView()
-
         setContentView(binding.root)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        setRecyclerView()
     }
 
     private fun setRecyclerView() {

@@ -20,8 +20,8 @@ class HomeViewModel: ViewModel() {
 
     fun doesContainNull(user: User): Boolean{
         return if (user.email.isEmpty() == true
-            || user.username.isEmpty() == true
-            || user.photo.isEmpty() == true) true else false
+            || user.name.isEmpty() == true
+            || user.image.isEmpty() == true) true else false
     }
 
 

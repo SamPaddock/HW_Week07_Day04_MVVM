@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
 import com.example.day34practicemvvmproject.Model.User
+import com.example.day34practicemvvmproject.Model.Users
 import com.example.day34practicemvvmproject.R
 import com.example.day34practicemvvmproject.View.MainView.HomeActivity
 import com.example.day34practicemvvmproject.databinding.ActivityRegisterBinding
@@ -34,7 +35,7 @@ class RegisterActivity : AppCompatActivity() {
 
             var sharedPref = this.getSharedPreferences("mvvm", Context.MODE_PRIVATE)
             viewModel.register(sharedPref,
-                User(
+                Users(
                     "0",
                     binding.editTextRegisteredEmail.text.toString(),
                     binding.editTextRegisteredPassword.text.toString(),
